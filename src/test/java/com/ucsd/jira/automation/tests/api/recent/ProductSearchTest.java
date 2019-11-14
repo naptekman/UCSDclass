@@ -14,14 +14,9 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.pwc.assertion.AssertService.assertEquals;
 import static com.pwc.assertion.AssertService.assertGreaterThan;
 import static com.pwc.assertion.AssertService.assertLessThanOrEqual;
-import static com.pwc.logging.service.LoggerService.FEATURE;
-import static com.pwc.logging.service.LoggerService.GIVEN;
-import static com.pwc.logging.service.LoggerService.SCENARIO;
-import static com.pwc.logging.service.LoggerService.THEN;
-import static com.pwc.logging.service.LoggerService.WHEN;
+import static com.pwc.logging.service.LoggerService.*;
 
 public class ProductSearchTest extends WebServiceTestCase {
 
@@ -54,7 +49,6 @@ public class ProductSearchTest extends WebServiceTestCase {
 
         THEN("The product search details are valid as expected");
         assertGreaterThan("Verify Search Type List size", recentSearchList.size(), 0);
-        assertEquals("Verify Http Status Value", response.getInt(FrameworkConstants.HTTP_STATUS_VALUE_KEY), org.apache.http.HttpStatus.SC_OK);
         assertLessThanOrEqual("Verify WS Performance", response.get(FrameworkConstants.HTTP_RESPONSE_TIME_KEY), Constants.MAX_WEB_SERVICE_RESPONSE_TIME);
 
     }

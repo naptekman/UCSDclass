@@ -40,7 +40,7 @@ public class CreateIssueTest extends JiraTestCase {
         webAction(Constants.DESCRIPTION_TEXT_AREA, Constants.DESCRIPTION_TEXT);
         webAction(Constants.CREATE_ISSUE_SUBMIT);
 
-       webAction(Constants.ISSUE_TYPE_COMBOBOX, Constants.ISSUE_TYPE_BUG);
+       // webAction(Constants.ISSUE_TYPE_COMBOBOX, Constants.ISSUE_TYPE_BUG);
 
         waitForElementToDisappear(Constants.REMOVE_BLANKET);
        webAction(Constants.SEARCH_ISSUE_BUTTON);

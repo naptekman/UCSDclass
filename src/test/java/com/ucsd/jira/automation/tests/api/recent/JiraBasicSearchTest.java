@@ -1,4 +1,4 @@
-package com.ucsd.jira.automation.tests.web.company.jira.search;
+package com.ucsd.jira.automation.tests.api.recent;
 
 import com.pwc.core.framework.annotations.Issue;
 import com.pwc.core.framework.listeners.Retry;

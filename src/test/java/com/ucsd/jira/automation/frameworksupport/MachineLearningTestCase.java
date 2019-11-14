@@ -85,9 +85,9 @@ public abstract class MachineLearningTestCase extends JiraTestCase {
             List<String> priorTestData = FileUtils.readFile(jsonStorageFile, jsonStorageFile.getName());
             if (!priorTestData.isEmpty()) {
                 Set<String> current = new HashSet<>();
-                String[] x = org.apache.commons.lang3.StringUtils.split(priorTestData.get(0), ",");
+                String[] x = StringUtils.split(priorTestData.get(0), ",");
                 for (String s : x) {
-                    String scrubbed = org.apache.commons.lang3.StringUtils.remove(s, "]");
+                    String scrubbed = StringUtils.remove(s, "]");
                     current.add(scrubbed);
                 }
                 base.addAll(current);

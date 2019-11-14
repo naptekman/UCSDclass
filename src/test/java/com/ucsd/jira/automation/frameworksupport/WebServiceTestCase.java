@@ -6,7 +6,7 @@ import com.pwc.core.framework.command.WebServiceCommand;
 import com.ucsd.jira.automation.data.Field;
 import com.ucsd.jira.automation.frameworksupport.command.webservice.JiraCommand;
 import com.ucsd.jira.automation.frameworksupport.type.JiraIssue;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

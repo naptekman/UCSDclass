@@ -9,7 +9,7 @@ import com.ucsd.jira.automation.data.Constants;
 import com.ucsd.jira.automation.data.Data;
 import com.ucsd.jira.automation.data.enums.JiraMenu;
 import com.ucsd.jira.automation.data.enums.LeftMenu;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
