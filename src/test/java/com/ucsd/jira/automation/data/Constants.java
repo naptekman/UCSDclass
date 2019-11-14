@@ -13,7 +13,6 @@ public final class Constants {
     public static final String LOGO_HEADING = "//h1[@id='logo']";
     public static final String TEST_HEADING = "//h1[contains(text(),'test')]";
     public static final String NEW_TEST_HEADING = "//*[@id=\"dashboard-content\"]/div[1]/div/div[1]/h1";
-
     // ANCHOR Elements
     public static final String FIRST_PROJECTS_ANCHOR = "//img[contains(@src, 'projectavatar')]/following-sibling::a";
 
@@ -38,6 +37,10 @@ public final class Constants {
 
     // STATIC Text
     public static final String NO_RECORDS_FOUND_TEXT = "No records found, try new search criteria.";
+    public static final String SUMMARY_TEXT = "this is just a test UCSD.";
+    public static final String DESCRIPTION_TEXT = "DESCRIPTION OF THE ISSUE GOES HERE";
+    public static final String SEARCH_TEXT = "UCSD";
+    public static final String ISSUE_TYPE_BUG = "BUG";
 
     //DIV Elements
     public static final String VARIABLE_BY_TEXT_DIV = "//div[text()='%s']";
@@ -45,9 +48,26 @@ public final class Constants {
     public static final String BOARDS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Boards']";
     public static final String PROJECTS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Projects']";
 
-    public static final String ISSUES_AND_FILTERS_DIV = "//*[@id='navigation-app']/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[3]/a/div[2]/div";
-    public static final String DASHBOARD_DIV = "//*[@id=\"navigation-app\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[1]/a/div[2]/div";
+    public static final String CREATE_ISSUE_BUTTON = "//*[@id='createGlobalItem']";
+    public static final String ISSUES_AND_FILTERS_DIV = "//*[@id=\"helpPanelContainer\"]/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[5]/a/div[2]/div";
+    public static final String DASHBOARD_DIV = "//*[@id=\"helpPanelContainer\"]/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a";
     public static final String PROJECTS_DIV = "//*[@id=\"jira-frontend\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+
+
+    public static final String SUMMARY_INPUT = "//*[@id=\'summary']";
+    public static final String CREATE_ISSUE_SUBMIT = "//*[@id=\'create-issue-submit']";
+    public static final String DESCRIPTION_TEXT_AREA = "//*[@id=\'description\']";
+    public static final String DESCRIPTION_TEXTAREA = "//*[@id=\'description\']";
+    public static final String CREATE_BUTTON = "//*[@id=\'create-issue-submit\']";
+    public static final String SEARCH_ISSUE_BUTTON = "//*[@id=\'quickSearchGlobalItem\']";
+    public static final String SEARCH_AREA_INPUT = "//input[@placeholder='Search Jira']";
+
+    public static final String ISSUE_TYPE_COMBOBOX = " //*[@id=\'issuetype-field\']";
+    public static final String REMOVE_BLANKET = "//*[@id=\"jira\"]/div[10]";
+
+
+//*[@id="jira"]/div[10]
+    //*[@id="issuetype-field"]
 
     private Constants() {
     }
